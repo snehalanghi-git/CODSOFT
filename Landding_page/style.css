@@ -1,0 +1,318 @@
+/* RESET */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:smooth;
+}
+
+/* BODY */
+
+body{
+background:#f3ede7;
+color:#3b2f2f;
+font-family:'Poppins',sans-serif;
+line-height:1.6;
+}
+
+/* HEADINGS */
+
+h1,h2,h3{
+font-family:'Playfair Display',serif;
+letter-spacing:1px;
+}
+
+h1{
+font-size:60px;
+}
+
+h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+h3{
+font-size:24px;
+}
+
+
+/* NAVBAR */
+
+header{
+
+display:flex;
+justify-content:space-between;
+align-items:center;
+
+padding:20px 80px;
+
+background:#4b2e2e;
+color:white;
+
+position:sticky;
+top:0;
+z-index:1000;
+
+box-shadow:0 4px 15px rgba(0,0,0,0.2);
+
+}
+
+.logo{
+font-size:22px;
+font-weight:600;
+}
+
+nav a{
+
+color:white;
+text-decoration:none;
+margin-left:25px;
+font-size:16px;
+position:relative;
+
+}
+
+/* NAV HOVER LINE */
+
+nav a::after{
+
+content:"";
+position:absolute;
+
+width:0;
+height:2px;
+
+left:0;
+bottom:-5px;
+
+background:#c89f7a;
+
+transition:0.3s;
+
+}
+
+nav a:hover::after{
+width:100%;
+}
+
+
+/* HERO SECTION */
+
+.hero{
+
+height:100vh;
+
+background:url("images/coffee-bg.jpg");
+background-size:cover;
+background-position:center;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+position:relative;
+
+}
+
+/* DARK OVERLAY */
+
+.hero::before{
+
+content:"";
+
+position:absolute;
+top:0;
+left:0;
+
+width:100%;
+height:100%;
+
+background:rgba(0,0,0,0.55);
+
+backdrop-filter:blur(3px);
+
+}
+
+.hero-content{
+
+position:relative;
+color:white;
+text-align:center;
+z-index:2;
+max-width:600px;
+
+}
+
+.hero p{
+margin-top:15px;
+margin-bottom:30px;
+font-size:18px;
+}
+
+
+/* BUTTON */
+
+.btn{
+
+padding:14px 32px;
+
+background:#6f4e37;
+
+color:white;
+
+border-radius:30px;
+
+text-decoration:none;
+
+font-weight:500;
+
+transition:0.3s;
+
+}
+
+.btn:hover{
+
+background:#3b2f2f;
+
+}
+
+
+/* GENERAL SECTIONS */
+
+section{
+padding:100px 10%;
+text-align:center;
+}
+
+
+/* ABOUT SECTION */
+
+#about{
+background:linear-gradient(135deg,#f8f5f2,#e9d8c8);
+position:relative;
+}
+
+.about-container{
+
+display:grid;
+grid-template-columns:1fr 1fr;
+gap:60px;
+align-items:center;
+
+}
+
+.about-image img{
+
+width:100%;
+border-radius:12px;
+
+box-shadow:0 15px 35px rgba(0,0,0,0.2);
+
+}
+
+.about-text{
+
+background:#fff8f2;
+
+padding:40px;
+
+border-radius:10px;
+
+box-shadow:0 10px 30px rgba(0,0,0,0.1);
+
+text-align:left;
+
+}
+
+.about-text p{
+margin-bottom:15px;
+}
+
+
+/* MENU SECTION */
+
+#menu{
+
+background:#e6d3c3;
+
+}
+
+
+
+
+.menu-grid{
+
+display:grid;
+
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+
+gap:35px;
+
+margin-top:50px;
+
+}
+
+
+/* COFFEE CARD */
+
+.coffee-card{
+
+background:#fff8f2;
+
+padding:20px;
+
+border-radius:12px;
+
+box-shadow:0 10px 25px rgba(0,0,0,0.1);
+
+transition:0.3s;
+
+}
+
+.coffee-card img{
+
+width:100%;
+
+border-radius:10px;
+
+margin-bottom:15px;
+
+}
+
+.coffee-card:hover{
+
+transform:translateY(-10px) scale(1.03);
+
+box-shadow:0 20px 40px rgba(0,0,0,0.2);
+
+}
+
+
+/* CONTACT */
+
+#contact{
+
+background:#4b2e2e;
+color:white;
+
+}
+
+#contact p{
+margin-top:10px;
+}
+
+
+/* FOOTER */
+
+footer{
+
+background:#2b1a1a;
+
+color:white;
+
+text-align:center;
+
+padding:25px;
+
+}
